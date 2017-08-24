@@ -1,0 +1,203 @@
+/*CSS RESET:*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	color:black;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {	line-height: 1;}
+ol, ul {	list-style: none;}
+blockquote, q {	quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {	content: '';	content: none;}
+table {	border-collapse: collapse;	border-spacing: 0;}
+
+/*STYLING*/
+
+html{
+
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+
+body{
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+}
+
+#indexBody{
+background-image: url(images/backgroundMoving.gif); /*You will specify your image path here.*/
+
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size: cover;
+background-position: bottom center !important;
+background-repeat: no-repeat !important;
+/*background-attachment: fixed;*/
+background-attachment: none;
+
+transition-delay: 3s: 
+
+}
+
+
+
+/*MAIN CONTENT STYLING*/
+
+h1, a{
+	font-family: 'Amiri', serif;
+}
+
+header{
+	text-align: center;
+}
+
+/*-------------------------------------------------------*/
+
+nav{
+
+	background-color:white;
+	position: fixed;
+	width:100%;
+	height:4.5em;
+}
+
+
+
+
+ul{
+	z-index: 1;
+	text-align: center;
+	vertical-align: top;
+	margin-top:3em;	
+	padding-bottom:1em;
+	
+	/*background-color:red;*/
+}
+
+ul li{
+	display: inline-block;
+	margin-left:8%;
+	margin-right:8%;
+	font-family: 'Roboto Slab';
+	/*font-size:2.4em;*/
+	font-size:1.8em;
+	padding-left:1em;
+	/*background-color:yellow;*/
+	
+}
+
+a{
+	color:black;
+	text-decoration: none;
+}
+
+#navFade {
+
+	color:gray;
+}
+
+#navFade:hover{
+	color:black;
+	/*text-shadow: 0 20px #7c7c7c;*/
+
+}
+
+
+
+/*-------------------------------------------------------*/
+
+#bodyHeight{
+	width:3000px;
+	height:100%;
+	background-color: yellow;
+
+    /*white-space: nowrap;*/
+}
+
+/*-------------------------------------------------------*/
+
+/*FOOTER STYLING*/
+
+#wrapper{
+
+	min-height: 100%;
+	position: relative;
+}
+
+footer{
+	/*position: absolute;*/
+	position:fixed;
+	font-family:sans-serif;
+	text-align: center;
+	width:100%;
+	left:0px;
+	bottom:0px;
+	padding: 2em 0 2em 0;
+	font-family:'Roboto Slab',sans-serif;
+	font-kerning: normal;
+
+}
+
+footer a{
+
+	font-family:'Roboto Slab',sans-serif;
+}
+
+
+#footerArt{
+width: 100%;
+margin-bottom:-3em;
+
+}
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 900px){
+    ul li{
+    	margin-right:7%;
+    	margin-left:7%;
+    }
+}
+
+@media (max-width: 800px){
+    ul li{
+    	display:block;
+    	margin-top:0.5em;
+    }
+}
+
+
